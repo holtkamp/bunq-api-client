@@ -18,7 +18,7 @@ $ composer require snijder/bunq-api-client
 $keyPair = new \Snijder\Bunq\Model\KeyPair($apiKey, $publicKey, $privateKey);
 $bunqClient = new \Snijder\Bunq\BunqClient($keyPair);
 
-$userResource = new \Snijder\Bunq\Resource\UserResource($BunqClient);
+$userResource = new \Snijder\Bunq\Resource\UserResource($bunqClient);
 $userResource->listUsers(); //list all available users.
 ```
 
